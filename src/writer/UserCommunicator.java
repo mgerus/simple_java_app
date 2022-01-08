@@ -10,7 +10,7 @@ public class UserCommunicator {
 
 		System.out.println("Please provide a directory and a name of a file for the response to be written to:");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String fileName= "defaultName.txt";
+		String fileName= "C:\\defaultName.txt";
 		try {
 			fileName = reader.readLine();
 		} catch (IOException e) {
