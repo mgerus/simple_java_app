@@ -9,8 +9,6 @@ import java.util.Scanner;
 
 import org.json.*;
 
-//import com.google.gson.JsonParser;
-
 public class ApiCommunication {
 	final String apiKey = "2038b5149ed543338d0f287ed0fce27a";
 	final String urlDomain = "https://newsapi.org/v2/top-headlines?";
@@ -54,13 +52,9 @@ public class ApiCommunication {
 				while (scanner.hasNext()) {
 					serverResponse += scanner.nextLine();
 				}
-
 				scanner.close();
 
 				// prepare JSON for reading
-
-				// JSONParser parser = new JsonParser();
-				// JSONObject data_obj = (JSONObject) parser.parse(serverResponse);
 				JSONObject obj = new JSONObject(serverResponse);
 				return obj;
 			}

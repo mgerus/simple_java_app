@@ -12,7 +12,7 @@ public class WriteToFile {
 	}
 
 	public void unsafeWrite(String fileName, String content) throws IOException {
-		FileWriter fileWriter = new FileWriter(homeDirectory + "\\" + fileName);
+		FileWriter fileWriter = new FileWriter(fileName);
 		PrintWriter printWriter = new PrintWriter(fileWriter);
 		printWriter.print(content);//printf fails for some reason
 		printWriter.close();
