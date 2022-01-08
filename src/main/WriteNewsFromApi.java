@@ -8,7 +8,7 @@ import apiCommunication.*;
 public class WriteNewsFromApi {
 
 	public static void main(String[] args) throws IOException {
-		WriteToFile writer = new WriteToFile("C:\\outputDirectory");
+		WriteToFile writer = new WriteToFile();
 		ApiCommunication communicator = new ApiCommunication();		
 		String fileName = UserCommunicator.getOutputFileName();
 		String resultsToBeWritten = communicator.getArticlesFromApiInStrings();
