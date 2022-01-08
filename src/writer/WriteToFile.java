@@ -10,6 +10,10 @@ public class WriteToFile {
 	public WriteToFile(String homeDirectory) {
 		this.homeDirectory = homeDirectory;
 	}
+	
+	public WriteToFile() {
+		this.homeDirectory = "";
+	}
 
 	public void unsafeWrite(String fileName, String content) throws IOException {
 		FileWriter fileWriter = new FileWriter(fileName);
